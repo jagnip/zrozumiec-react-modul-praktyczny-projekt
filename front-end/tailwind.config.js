@@ -2,7 +2,19 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#000000",
+      },
+      fontFamily: {
+        display: ["GT Walsheim Pro", "sans-serif"],
+        body: ["GT Walsheim Pro", "sans-serif"],
+      },
+      fontWeight: {
+        normal: 400,
+        medium: 500,
+      },
+    },
   },
   plugins: [],
 };
