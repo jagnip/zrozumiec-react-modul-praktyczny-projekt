@@ -8,4 +8,28 @@
   #root {
     @apply flex flex-col items-center min-h-[100vw];
   }
+
+  h1 {
+    @apply font-display leading-h1 text-4xl font-medium;
+  }
+
+  h2 {
+    @apply font-display leading-h2 text-3xl font-medium;
+  }
+
+  h3 {
+    @apply font-display leading-h3 text-2xl font-medium;
+  }
+
+  h4 {
+    @apply font-display leading-h4 text-xl font-medium;
+  }
+
+  h5 {
+    @apply font-display leading-h5 text-lg font-medium;
+  }
+
+  p {
+    @apply font-body leading-body text-base font-normal;
+  }
 }

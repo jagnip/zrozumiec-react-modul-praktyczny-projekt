@@ -1,10 +1,12 @@
 function App() {
   return (
     <>
-      <h1 className="text-text-primary font-display font-medium underline">
-        Hello world!
-      </h1>
-      <p className="text-text-primary font-body">Hello world!</p>
+      <h1>Hello world!</h1>
+      <h2>Hello world!</h2>
+      <h3>Hello world!</h3>
+      <h4>Hello world!</h4>
+      <h5>Hello world!</h5>
+      <p>Hello world!</p>
     </>
   );
 }
