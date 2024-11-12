@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#000000",
+        'text-primary': "#000000",
       },
       fontFamily: {
         display: ["GT Walsheim Pro", "sans-serif"],
