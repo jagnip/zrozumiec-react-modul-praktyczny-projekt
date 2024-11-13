@@ -6,7 +6,7 @@
 
 @layer base {
   #root {
-    @apply flex flex-col items-center min-h-[100vw];
+    @apply flex flex-col items-center min-h-[100vw] bg-bg-primary;
   }
 
   h1 {
