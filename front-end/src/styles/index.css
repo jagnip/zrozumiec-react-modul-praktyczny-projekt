@@ -34,6 +34,6 @@
   }
   
   a {
-    @apply font-body leading-body text-base font-normal;
+    @apply font-body leading-body text-base font-normal underline underline-offset-2;
   }
 }
