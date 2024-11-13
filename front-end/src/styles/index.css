@@ -6,7 +6,7 @@
 
 @layer base {
   #root {
-    @apply flex flex-col items-center min-h-[100vw] bg-bg-primary;
+    @apply flex flex-col min-h-[100vw] bg-bg-primary p-page-margin;
   }
 
   h1 {
@@ -30,6 +30,10 @@
   }
 
   p {
+    @apply font-body leading-body text-base font-normal;
+  }
+  
+  a {
     @apply font-body leading-body text-base font-normal;
   }
 }

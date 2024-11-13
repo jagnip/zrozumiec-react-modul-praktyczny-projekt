@@ -28,6 +28,9 @@ export default {
         h5: "1.313rem",
         body: "1.5rem",
       },
+      spacing: {
+        "page-margin": "1.5rem",
+      },
     },
   },
   plugins: [],
