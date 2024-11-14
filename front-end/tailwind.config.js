@@ -6,6 +6,7 @@ export default {
       colors: {
         "text-primary": "#000000",
         "bg-primary": "#F6F8F9",
+        "icon-primary": "#000000"
       },
       fontFamily: {
         display: ["GT Walsheim Pro", "sans-serif"],
