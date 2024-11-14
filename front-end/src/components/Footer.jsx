@@ -1,11 +1,12 @@
 import { Logo } from "./Logo";
 import linkedinIcon from "../assets/svg/linkedin-icon.svg";
+import symbol from "../assets/svg/logo-symbol.svg";
 
 export function Footer() {
   return (
     <footer className="flex flex-col gap-5 pt-2">
       {/* Logo */}
-      <Logo type="symbol" />
+      <Logo src={symbol} type="symbol" />
 
       {/* Contact Links */}
       <div className="flex flex-col">

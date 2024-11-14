@@ -1,3 +1,12 @@
+import { Logo } from "./Logo";
+import wordmark from "../assets/svg/logo-wordmark.svg";
+
 export function Header() {
-    return <p>hello from header</p>
+  return (
+    <>
+      <header>
+        <Logo src={wordmark} type="wordmark" />
+      </header>
+    </>
+  );
 }
