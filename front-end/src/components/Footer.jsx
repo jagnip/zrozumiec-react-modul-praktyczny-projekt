@@ -47,7 +47,7 @@ export function Footer() {
           href="https://usefathom.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#575757]"
+          className="pt-5 text-xs text-[#575757]"
           aria-label="Fathom privacy-focused analytics"
         >
           privacy-focused analytics.
