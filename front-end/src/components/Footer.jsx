@@ -4,7 +4,7 @@ import linkedinIcon from "../assets/svg/linkedin-icon.svg";
 export function Footer() {
   return (
     <footer className="flex flex-col gap-5 pt-2">
-      <Logo />
+      <Logo type="symbol" />
       <p className="flex flex-col">
         <a
           href="tel:+447898005228"
