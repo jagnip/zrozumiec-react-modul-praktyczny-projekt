@@ -19,7 +19,7 @@ const routes = [
 
 export function NavDesktop() {
   return (
-    <ul className="flex gap-5 text-sm lg:flex lg:items-center">
+    <ul className="hidden gap-5 text-sm lg:flex lg:items-center">
       {routes.map(({ href, title }) => (
         <li>
           <a href={href}>{title}</a>
