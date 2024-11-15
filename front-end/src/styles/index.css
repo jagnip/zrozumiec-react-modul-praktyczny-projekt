@@ -10,7 +10,7 @@
   }
 
   h1 {
-    @apply font-display leading-h1 text-4xl font-medium;
+    @apply font-display leading-h1 text-4xl font-medium tracking-wide;
   }
 
   h2 {
