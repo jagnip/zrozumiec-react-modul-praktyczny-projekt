@@ -1,18 +1,29 @@
 import { Logo } from "./Logo";
 import wordmark from "../assets/svg/logo-wordmark.svg";
-import { NavDesktop } from "./NavDesktop";
-import { NavMobile } from "./NavMobile";
 import { Link } from "react-router-dom";
+import { Slant as Hamburger } from "hamburger-react";
+import { useState } from "react";
 
 export function Header() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <>
-      <header className="flex justify-between">
+      <header className="sticky top-0 z-[100] grid grid-cols-3 items-center p-8 mix-blend-difference">
         <Logo src={wordmark} type="wordmark" />
-        {/* Toggle button */}
-        <Link>Get in touch</Link>
-        {/* <NavDesktop/>
-        <NavMobile/> */}
+        <div className="justify-self-center">
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            size={24}
+            distance="sm"
+            label="Show menu"
+            color="#ffffff"
+          />
+        </div>
+        <Link className="text-text-primary-inverted justify-self-end">
+          Get in touch
+        </Link>
       </header>
     </>
   );

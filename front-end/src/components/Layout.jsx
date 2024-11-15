@@ -1,5 +1,7 @@
+import { easings } from "../utils/animations";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
+import { motion } from "framer-motion";
 
 export function Layout() {
   return (
@@ -7,23 +9,34 @@ export function Layout() {
       <section className="relative flex h-screen flex-col">
         <Header />
         {/* Landing page content */}
-        <div className="mx-auto flex flex-1 flex-col">
-          <h1 className="md:pl-[10%]">We design</h1>
-          <div className="flex items-center z-10 bg-bg-primary">
-            <div className="bg-bg-primary-inverted h-1 flex-1 mr-8 hidden md:block origin-left"/>
-            <h1 className="z-20">Good enough</h1>
+        <motion.div
+          initial="initial"
+          animate="animate"
+          className="mx-auto flex flex-1 flex-col"
+        >
+          <motion.h1 className="md:pl-[10%]">We design</motion.h1>
+          <div className="bg-bg-primary z-10 flex items-center">
+            <motion.div
+              initial={{ scaleX: 0 }}
+              animate={{
+                scaleX: 1,
+                transition: { duration: 0.8, ease: easings.easeInOutQuint },
+              }}
+              className="bg-bg-primary-inverted mr-8 hidden h-1 flex-1 origin-left md:block"
+            />
+            <motion.h1 className="z-20">Good enough</motion.h1>
           </div>
           <div className="bg-bg-primary z-20">
-            <h1>Digital products</h1>
+            <motion.h1>Digital products</motion.h1>
           </div>
-          <div className="bg-bg-primary z-30 flex-1 w-full pt-8 md:pl-[20%]">
-            <p className="max-w-lg">
+          <div className="bg-bg-primary z-30 w-full flex-1 pt-8 md:pl-[20%]">
+            <motion.p className="max-w-lg">
               Good Enough Studio® is a design studio focused on digital
               products that works with companies around the world, helping them
               grow and expand their business.
-            </p>
+            </motion.p>
           </div>
-        </div>
+        </motion.div>
       </section>
       <Footer />
     </>

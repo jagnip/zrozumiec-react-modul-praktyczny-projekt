@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "text-primary": "#000000",
+        "text-primary-inverted": "#ffffff",
         "bg-primary": "#F6F8F9",
         "icon-primary": "#000000",
         "bg-primary-inverted": "#000000"
