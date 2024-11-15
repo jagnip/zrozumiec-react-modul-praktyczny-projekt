@@ -17,7 +17,7 @@ const routes = [
   },
 ];
 
-export function NavDesktop() {
+export function NavMenu() {
   return (
     <ul className="flex gap-5 text-sm lg:flex lg:items-center">
       {routes.map(({ href, title }) => (
