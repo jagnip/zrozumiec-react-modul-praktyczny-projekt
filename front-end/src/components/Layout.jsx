@@ -50,9 +50,9 @@ export function Layout() {
               }}
               className="max-w-lg"
             >
-              Blue Berry® is a design studio focused on digital
-              products that works with companies around the world, helping them
-              grow and expand their business.
+              Blue Berry® is a design studio focused on digital products that
+              works with companies around the world, helping them grow and
+              expand their business.
             </motion.p>
           </div>
         </motion.div>
