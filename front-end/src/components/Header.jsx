@@ -4,8 +4,16 @@ import { Link } from "react-router-dom";
 import { Slant as Hamburger } from "hamburger-react";
 import { useState } from "react";
 
-export function Header() {
+export function Header({ onToggleMenu }) {
   const [isOpen, setOpen] = useState(false);
+
+  function handleToggle(toggled) {
+    if (toggled) {
+      onToggleMenu(toggled);
+    } else {
+      onToggleMenu(toggled);
+    }
+  }
 
   return (
     <>
@@ -15,6 +23,7 @@ export function Header() {
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
+            onToggle={handleToggle}
             size={24}
             distance="sm"
             label="Show menu"

@@ -8,11 +8,15 @@ import { motion } from "framer-motion";
 export function Layout() {
   const [menuOpen, isMenuOpen] = useState(false);
 
+  function handleToggleMenu(toggled) {
+    isMenuOpen(toggled);
+  }
+
   return (
     <>
       <section className="relative flex h-screen flex-col">
         {menuOpen && <NavMenu />}
-        <Header />
+        <Header onToggleMenu={handleToggleMenu} />
         {/* Landing page content */}
         <motion.div
           initial="initial"
