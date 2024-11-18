@@ -9,13 +9,13 @@ export function Header({ onToggleMenu }) {
 
   return (
     <>
-      <header className="sticky top-0 z-[100] grid grid-cols-3 items-center p-8 mix-blend-difference">
+      <header className="p-page-margin sticky top-0 z-[100] grid grid-cols-3 items-center mix-blend-difference">
         <Logo src={wordmark} type="wordmark" />
         <div className="justify-self-center">
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
-            onToggle={toggled => onToggleMenu(toggled)}
+            onToggle={(toggled) => onToggleMenu(toggled)}
             size={24}
             distance="sm"
             label="Show menu"

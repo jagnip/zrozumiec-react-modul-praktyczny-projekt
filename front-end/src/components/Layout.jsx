@@ -17,7 +17,7 @@ export function Layout() {
         <motion.div
           initial="initial"
           animate="animate"
-          className="mx-auto flex flex-1 flex-col"
+          className="px-page-margin mx-auto flex flex-1 flex-col"
         >
           <div>
             <motion.h1 variants={textRevealMotion(0)} className="md:pl-[10%]">

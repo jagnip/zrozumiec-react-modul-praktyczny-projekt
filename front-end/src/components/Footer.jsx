@@ -4,7 +4,7 @@ import symbol from "../assets/svg/logo-symbol.svg";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col gap-5 pt-2">
+    <footer className="px-page-margin pb-page-margin flex flex-col gap-5 pt-2">
       {/* Logo */}
       <Logo src={symbol} type="symbol" />
 
