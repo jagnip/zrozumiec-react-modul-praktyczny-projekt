@@ -32,11 +32,11 @@ export function NavMenu() {
       exit={{ y: "-100%", transition: { duration: 0.3 } }}
       className="bg-bg-secondary absolute z-50 flex h-screen w-screen flex-col justify-center p-8"
     >
-      <ul>
+      <motion.ul exit={{ opacity: 0, trasition: { duration: 0 } }}>
         {navItems.map((item, idx) => (
           <NavMenuItem key={idx} index={idx + 1} title={item.title} />
         ))}
-      </ul>
+      </motion.ul>
     </motion.nav>
   );
 }
