@@ -1,6 +1,25 @@
 import { motion } from "framer-motion";
 import { easings } from "../utils/animations";
 
+const routes = [
+  {
+    title: "Projects",
+    href: "#",
+  },
+  {
+    title: "Visuals",
+    href: "#",
+  },
+  {
+    title: "About",
+    href: "#",
+  },
+  {
+    title: "Say hello",
+    href: "#",
+  },
+];
+
 export function NavMenu() {
   return (
     <motion.nav
