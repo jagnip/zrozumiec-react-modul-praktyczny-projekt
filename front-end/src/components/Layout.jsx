@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { easings, textRevealMotion } from "../utils/animations";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -5,12 +6,12 @@ import { NavMenu } from "./NavMenu";
 import { motion } from "framer-motion";
 
 export function Layout() {
+  const [menuOpen, isMenuOpen] = useState(false);
 
-  
   return (
     <>
       <section className="relative flex h-screen flex-col">
-        <NavMenu></NavMenu>
+        {menuOpen && <NavMenu />}
         <Header />
         {/* Landing page content */}
         <motion.div
