@@ -3,7 +3,7 @@ import { easings, textRevealMotion } from "../utils/animations";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { NavMenu } from "./NavMenu";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export function Layout() {
   const [menuOpen, isMenuOpen] = useState(false);
@@ -11,8 +11,8 @@ export function Layout() {
   return (
     <>
       <section className="relative flex h-screen flex-col">
-        {menuOpen && <NavMenu />}
-        <Header onToggleMenu={toggled => isMenuOpen(toggled)} />
+        <AnimatePresence>{menuOpen && <NavMenu />}</AnimatePresence>
+        <Header onToggleMenu={(toggled) => isMenuOpen(toggled)} />
         {/* Landing page content */}
         <motion.div
           initial="initial"
