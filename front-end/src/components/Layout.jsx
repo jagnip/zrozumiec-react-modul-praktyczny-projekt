@@ -1,12 +1,16 @@
 import { easings, textRevealMotion } from "../utils/animations";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
+import { NavMenu } from "./NavMenu";
 import { motion } from "framer-motion";
 
 export function Layout() {
+
+  
   return (
     <>
       <section className="relative flex h-screen flex-col">
+        <NavMenu></NavMenu>
         <Header />
         {/* Landing page content */}
         <motion.div
