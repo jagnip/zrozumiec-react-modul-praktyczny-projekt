@@ -7,14 +7,6 @@ import { useState } from "react";
 export function Header({ onToggleMenu }) {
   const [isOpen, setOpen] = useState(false);
 
-  function handleToggle(toggled) {
-    if (toggled) {
-      onToggleMenu(toggled);
-    } else {
-      onToggleMenu(toggled);
-    }
-  }
-
   return (
     <>
       <header className="sticky top-0 z-[100] grid grid-cols-3 items-center p-8 mix-blend-difference">
@@ -23,7 +15,7 @@ export function Header({ onToggleMenu }) {
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
-            onToggle={handleToggle}
+            onToggle={toggled => onToggleMenu(toggled)}
             size={24}
             distance="sm"
             label="Show menu"
