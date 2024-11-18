@@ -10,7 +10,9 @@ export function NavMenuItem({ index, title }) {
         </span>
         <h3 className="text-text-primary-inverted flex-1">{title}</h3>
         <div>
-          <p>{arrow}</p>
+          <div>
+            <img src={arrow} alt="Arrow" />
+          </div>
         </div>
       </div>
       <div className="bg-bg-primary absolute bottom-0 h-[2px] w-full origin-left" />
