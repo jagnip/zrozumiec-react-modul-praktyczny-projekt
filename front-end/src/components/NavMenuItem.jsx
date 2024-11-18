@@ -1,3 +1,3 @@
-export function NavMenuItem() {
-  return <p className="text-blue-100">Hello</p>;
+export function NavMenuItem({ index, title }) {
+  return <p className="text-blue-100">{title}</p>;
 }
