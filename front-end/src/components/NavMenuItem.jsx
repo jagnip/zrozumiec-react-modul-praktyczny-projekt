@@ -1,6 +1,10 @@
 import arrow from "../assets/svg/arrow.svg";
 import { motion } from "framer-motion";
-import { dividerMotion } from "../utils/animations";
+import {
+  dividerMotion,
+  arrowMotion,
+  itemContentMotion,
+} from "../utils/animations";
 
 export function NavMenuItem({ index, title }) {
   return (
@@ -12,14 +16,14 @@ export function NavMenuItem({ index, title }) {
     >
       <div className="relative flex w-full items-center">
         <div className="bg-bg-primary-inverted absolute inset-0 hidden" />
-        <span className="w-[4ch]">
+        <motion.span variants={itemContentMotion} className="w-[4ch]">
           {index.toLocaleString("en-US", { minimumIntegerDigits: 2 })}
-        </span>
+        </motion.span>
         <h3 className="text-text-primary-inverted flex-1">{title}</h3>
         <div>
-          <div>
+          <motion.div variants={arrowMotion}>
             <img src={arrow} alt="Arrow" />
-          </div>
+          </motion.div>
         </div>
       </div>
       <motion.div

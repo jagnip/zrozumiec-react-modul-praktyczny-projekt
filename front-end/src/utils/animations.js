@@ -25,3 +25,21 @@ export const dividerMotion = {
     transition: { delay: 1, duration: 0.5, ease: easings.easeInOutQuint },
   },
 };
+
+export const arrowMotion = {
+  hover: {
+    rotate: -90,
+    transition: {
+      type: "spring",
+      bounce: 0.5,
+      duration: 0.5,
+    },
+  },
+};
+
+export const itemContentMotion = {
+  hover: {
+    width: "5ch",
+    transition: { type: "spring", bounce: 0.5, duration: 0.5 },
+  },
+};
