@@ -10,6 +10,8 @@ export default {
         "bg-secondary": "#000000",
         "icon-primary": "#000000",
         "bg-primary-inverted": "#000000",
+        "stroke-primary": "#000000",
+        "stroke-primary-inverted": "#ffffff"
       },
       fontFamily: {
         display: ["GT Walsheim Pro", "sans-serif"],
