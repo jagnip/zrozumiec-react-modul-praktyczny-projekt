@@ -6,13 +6,13 @@ import { NavMenu } from "./NavMenu";
 import { AnimatePresence, motion } from "framer-motion";
 
 export function Layout() {
-  const [menuOpen, isMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
       <section className="relative flex h-screen flex-col">
-        <AnimatePresence>{menuOpen && <NavMenu />}</AnimatePresence>
-        <Header onToggleMenu={(toggled) => isMenuOpen(toggled)} />
+        <AnimatePresence>{isMenuOpen && <NavMenu />}</AnimatePresence>
+        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         {/* Landing page content */}
         <motion.div
           initial="initial"

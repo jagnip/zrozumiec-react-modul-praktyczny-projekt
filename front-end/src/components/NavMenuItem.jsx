@@ -32,7 +32,7 @@ export function NavMenuItem({ index, title }) {
         <h3 className="text-text-primary-inverted flex-1">{title}</h3>
         <div>
           <motion.div variants={arrowMotion}>
-            <img className="w-8 h-8" src={arrow} alt="Arrow" />
+            <img src={arrow} alt="Arrow" />
           </motion.div>
         </div>
       </div>
