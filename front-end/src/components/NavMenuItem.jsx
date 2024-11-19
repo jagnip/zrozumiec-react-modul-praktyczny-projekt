@@ -4,6 +4,7 @@ import {
   dividerMotion,
   arrowMotion,
   itemContentMotion,
+  itemCoverMotion,
 } from "../utils/animations";
 
 export function NavMenuItem({ index, title }) {
@@ -15,7 +16,10 @@ export function NavMenuItem({ index, title }) {
       whileHover="hover"
     >
       <div className="relative flex w-full items-center">
-        <div className="bg-bg-primary-inverted absolute inset-0 hidden" />
+        <motion.div
+          variants={itemCoverMotion}
+          className="bg-bg-primary-inverted absolute inset-0"
+        />
         <motion.span variants={itemContentMotion} className="w-[4ch]">
           {index.toLocaleString("en-US", { minimumIntegerDigits: 2 })}
         </motion.span>
