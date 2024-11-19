@@ -22,7 +22,7 @@ export const dividerMotion = {
   initial: { scaleX: 0 },
   animate: {
     scaleX: 1,
-    transition: { delay: 1, duration: 0.5, ease: easings.easeInOutQuint },
+    transition: { delay: 0.6, duration: 0.4, ease: easings.easeInOutQuint },
   },
 };
 
@@ -39,7 +39,7 @@ export const arrowMotion = {
 
 export const itemContentMotion = {
   hover: {
-    width: "5ch",
+    width: "1ch",
     transition: { type: "spring", bounce: 0.5, duration: 0.5 },
   },
 };
@@ -48,6 +48,6 @@ export const itemCoverMotion = {
   initial: { height: "100%" },
   animate: {
     height: 0,
-    transition: { delay: 1, duration: 0.8, ease: easings.easeInOutQuint },
+    transition: { delay: 0.6, duration: 0.6, ease: easings.easeInOutQuint },
   },
 };

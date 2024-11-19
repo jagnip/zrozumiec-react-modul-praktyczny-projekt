@@ -13,7 +13,7 @@ export function NavMenuItem({ index, title }) {
 
   return (
     <motion.li
-      className={`text-text-primary-inverted relative w-full cursor-pointer py-4 ${
+      className={`text-text-primary-inverted relative w-full cursor-pointer py-8 ${
         isLoading ? "pointer-events-none" : "pointer-events-auto"
       }`}
       initial="initial"
@@ -26,13 +26,13 @@ export function NavMenuItem({ index, title }) {
           variants={itemCoverMotion}
           className="bg-bg-primary-inverted absolute inset-0"
         />
-        <motion.span variants={itemContentMotion} className="w-[4ch]">
+        <motion.span variants={itemContentMotion} className="w-0 text-text-primary">
           {index.toLocaleString("en-US", { minimumIntegerDigits: 2 })}
         </motion.span>
         <h3 className="text-text-primary-inverted flex-1">{title}</h3>
         <div>
           <motion.div variants={arrowMotion}>
-            <img src={arrow} alt="Arrow" />
+            <img className="w-8 h-8" src={arrow} alt="Arrow" />
           </motion.div>
         </div>
       </div>

@@ -27,12 +27,12 @@ export function NavMenu() {
       initial={{ y: "-100%" }}
       animate={{
         y: "0",
-        transition: { duration: 1, ease: easings.easeOutQuart },
+        transition: { duration: 0.8, ease: easings.easeOutQuart },
       }}
-      exit={{ y: "-100%", transition: { duration: 0.3 } }}
+      exit={{ y: "-100%", transition: { duration: 0.2 } }}
       className="bg-bg-secondary absolute z-50 flex h-screen w-screen flex-col justify-center p-8"
     >
-      <motion.ul exit={{ opacity: 0, trasition: { duration: 0 } }}>
+      <motion.ul exit={{ opacity: 0, transition: { duration: 0 } }}>
         {navItems.map((item, idx) => (
           <NavMenuItem key={idx} index={idx + 1} title={item.title} />
         ))}
